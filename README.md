@@ -2,6 +2,10 @@
 
 Welcome to the **Smart Multi-Channel Sales Reconciler**, a modern, full-stack financial dashboard designed to ingest, parse, and consolidate unstructured multi-channel sales reports. Powered by a server-side **Gemini 3.5 Flash** engine, this application automates the tedious work of financial data preparation, transforming messy, raw text logs into structured ledger databases and interactive visual analytics.
 
+You can find the published app [here](https://sc-multi-channel-sales-reconciler.ai.studio/)
+
+![Image of the homepage](./Homepage.png)
+
 ---
 
 ## 🚀 Core Features & Capabilities
@@ -21,6 +25,8 @@ The workspace is arranged in a clean, desktop-optimized, single-screen layout wi
 ### 1. Header & Filter Controls
 * **Report Focus & Filter Bar**: Located at the top of the workspace. Filter the active dataset dynamically by selecting specific calendar months or clicking **All Time** to review the complete, unified history.
 * **Active Theme Switcher**: Positioned right beneath the filters. A dedicated dual-state toggler allows instantaneous transition between light and dark visual mode.
+
+![Image of header and filter tools](./Header%20and%20Filter%20Tools.png)
 
 ### 2. Key Performance Indicators (KPI) Panel
 Four high-fidelity metrics cards provide instant, dynamic updates based on the active report filters:
@@ -42,6 +48,7 @@ Four high-fidelity metrics cards provide instant, dynamic updates based on the a
 * **Granular Controls**: Free-text search matching product names, regions, or channels. Filter rows by transaction types (Sales vs. Returns) or isolate specific source channels.
 * **Export Ledger (CSV)**: Generates a fully compliant comma-separated file representing the active filtered dataset for immediate download and import into Microsoft Excel or Google Sheets.
 
+![Manage reports to use](./Adjust%20reports%20to%20use.png)
 ---
 
 ## 📈 Uncovering Data Insights
