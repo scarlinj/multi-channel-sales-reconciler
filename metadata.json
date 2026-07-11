@@ -1,0 +1,6 @@
+{
+  "name": "Multi-Channel Sales Reconciler",
+  "description": "Consolidate sales reports from various channels and analyze key metrics with the power of Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
