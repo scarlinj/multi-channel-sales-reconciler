@@ -86,3 +86,10 @@ Want to test the parser instantly? The import drawer includes three built-in **Q
 - **POS Journal Logs**
 
 *Note: Make sure your `GEMINI_API_KEY` is configured in **Settings > Secrets** to enable server-side parsing.*
+
+# Notes
+If you look in the package.json file, you will see the the "start" command runs "node dist/server.cjs".  Node enforces strict path resolution rules when executing modern ES Modules (type: "module" or imports with relative file paths). Compiling the server code into CommonJS (.cjs) completely resolves all internal relative import paths during the build phase. This prevents runtime path mismatch errors when the application boots up.
+
+Node.js cannot natively run TypeScript files (like server.ts) in production environments without overhead. During the build phase, esbuild transpiles and bundles the server code into standard, native JavaScript that Node can run instantly without needing heavy runtime transpilation tools.
+
+The build command bundles the backend server logic into a single file inside the /dist directory.  This directory is generated dynamically during the build phase.  Because it is a compiled artifact generated from the source files (/src/* and server.ts), it should never be edited manually. Keeping it in .gitignore keeps the repository clean and ensures production builds are always fresh, secure, and fully reproducible.
